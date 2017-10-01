@@ -2,7 +2,9 @@
 > A react component that renders a scroll-to-top button.
 
 ### Demo
-
+<p align="center">
+  <img  src="demo.gif" alt="Demo" />
+</p>
 
 ### Usage
 
