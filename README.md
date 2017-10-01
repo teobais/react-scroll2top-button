@@ -1,4 +1,4 @@
-# React Lorem component
+# React Scroll2TopButton component
 > A react component that renders a scroll-to-top button.
 
 ### Demo
@@ -8,6 +8,8 @@
 
 ### Usage
 
+    npm install react-scroll2top-button    
+
 > In your .jsx
 
 ```javascript
@@ -16,12 +18,15 @@ import Scroll2TopButton from 'react-scroll2top-button/Scroll2TopButton';
 
 render(
   <div>
+    <h1>Hello World!</h1>
+    <h1>Hello World!</h1>
+    <h1>Hello World!</h1>
+    ...
     <Scroll2TopButton />
   </div>,
   document.getElementById('root')
 );
 ```
-<hr/>
 
 > In your webpack.config.js
 
@@ -44,9 +49,6 @@ module: {
 | scrollStep | scrolling per [scrollStep] pixels | number |    NO    |
 | color          |              button color             | string |    NO    |
  
-### Installation
-[![https://nodei.co/npm/react-scroll2top-button.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/react-scroll2top-button.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-scroll2top-button) [![NPM](https://nodei.co/npm-dl/react-scroll2top-button.png?months=6&height=2)](https://nodei.co/npm/react-scroll2top-button.js)
-
 ### Example
 
 ```
