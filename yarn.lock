@@ -372,6 +372,10 @@ babel-plugin-check-es2015-constants@^6.3.13:
   dependencies:
     babel-runtime "^6.0.0"
 
+babel-plugin-react-html-attrs@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-html-attrs/-/babel-plugin-react-html-attrs-2.0.0.tgz#7e74ad72a104a57cd265e7faf694a16f611d3a9d"
+
 babel-plugin-react-transform@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-2.0.2.tgz#515bbfa996893981142d90b1f9b1635de2995109"
@@ -926,6 +930,10 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
+browser-utils@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/browser-utils/-/browser-utils-0.0.2.tgz#5b91f664dc3e10a990f118e44cf10b95deccd701"
+
 browserify-aes@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/browserify-aes/-/browserify-aes-0.4.0.tgz#067149b668df31c4b58533e02d01e806d8608e2c"
@@ -1015,6 +1023,10 @@ chokidar@^1.0.0:
 circular-json@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
+
+classnames@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-1.2.2.tgz#e96a2a0222d84925dd8fadb205d66e12f888edf9"
 
 classnames@^2.1.5:
   version "2.2.5"
@@ -1631,6 +1643,18 @@ faye-websocket@~0.11.0:
 fbjs@^0.8.1, fbjs@^0.8.4:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.8.tgz#02f1b6e0ea0d46c24e0b51a2d24df069563a5ad6"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.9"
+
+fbjs@^0.8.16:
+  version "0.8.16"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
     core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
@@ -2514,6 +2538,10 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
 
+object-assign@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+
 object.omit@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/object.omit/-/object.omit-2.0.1.tgz#1a9c744829f39dbb858c76ca3579ae2a54ebd1fa"
@@ -2700,6 +2728,14 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+prop-types@^15.5.10:
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
@@ -2750,15 +2786,14 @@ querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
 
-radium@^0.19.1:
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/radium/-/radium-0.19.1.tgz#0fbcc6d0ea5526bdb1e5e5371cad386775a3eec8"
+radium@^0.19.4:
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/radium/-/radium-0.19.4.tgz#56aa49fde6181d2f5e1fa57b4710ffd0c23de820"
   dependencies:
     array-find "^1.0.0"
     exenv "^1.2.1"
     inline-style-prefixer "^2.0.5"
     prop-types "^15.5.8"
-    rimraf "^2.6.1"
 
 randomatic@^1.1.3:
   version "1.1.6"
@@ -2797,6 +2832,15 @@ react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
 
+react-dom@^15.3.1:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.2.tgz#41cfadf693b757faf2708443a1d1fd5a02bef730"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
+
 react-dom@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.1.tgz#d54c913261aaedb17adc20410d029dcc18a1344a"
@@ -2804,6 +2848,23 @@ react-dom@^15.4.1:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
+
+react-lorem@^1.0.5:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/react-lorem/-/react-lorem-1.0.13.tgz#ab24db185e2991b5131282ad47102c0ce66837f1"
+  dependencies:
+    babel-runtime "^6.20.0"
+    react "^15.4.1"
+    react-dom "^15.4.1"
+    str8 "^1.0.5"
+
+react-mfb@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-mfb/-/react-mfb-0.5.0.tgz#5a95b2711c4dd0eaa46f93d2686aa91c59569f28"
+  dependencies:
+    classnames "^1.2.0"
+    prop-types "^15.5.10"
+    react-dom "^15.3.1"
 
 react-proxy@^1.1.7:
   version "1.1.8"
@@ -2996,12 +3057,6 @@ rimraf@^2.2.8, rimraf@~2.5.1, rimraf@~2.5.4, rimraf@2:
   dependencies:
     glob "^7.0.5"
 
-rimraf@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
-  dependencies:
-    glob "^7.0.5"
-
 ripemd160@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-0.2.0.tgz#2bf198bde167cacfa51c0a928e84b68bbe171fce"
@@ -3165,6 +3220,10 @@ sshpk@^1.7.0:
 "statuses@>= 1.3.1 < 2", statuses@~1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
+
+str8@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/str8/-/str8-1.0.5.tgz#1c17441ae8c4c9f27099bb19773c06feeec10415"
 
 stream-browserify@^2.0.1:
   version "2.0.1"
