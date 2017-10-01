@@ -1,0 +1,64 @@
+{
+  "name": "react-scroll2top-button",
+  "version": "1.0.0",
+  "description": "A react component that renders a scroll-to-top button",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
+    "lint": "eslint --cache --ignore-path .gitignore --format=node_modules/eslint-formatter-pretty . *.js",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toubou91/react-scroll2top-button/.git"
+  },
+  "keywords": [
+    "react",
+    "scroll-to-top",
+    "button",
+    "svg",
+    "scroll"
+  ],
+  "author": "Thodoris Bais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toubou91/react-scroll2top-button/issues"
+  },
+  "homepage": "https://github.com/toubou91/react-scroll2top-button/",
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "browser-utils": "0.0.2",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-compat": "^0.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "prop-types": "^15.5.10",
+    "radium": "^0.19.1",
+    "react-addons-pure-render-mixin": "^15.5.2",
+    "react-buttons": "^0.0.11",
+    "react-lorem": "^1.0.5",
+    "react-mfb": "^0.5.0",
+    "react-transform-hmr": "^1.0.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
