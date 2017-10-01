@@ -1,6 +1,6 @@
 {
   "name": "react-scroll2top-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A react component that renders a scroll-to-top button",
   "main": "index.js",
   "scripts": {
