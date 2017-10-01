@@ -25,8 +25,8 @@ render(
 
 | Property       |              Description              |  Type  | Required |
 |----------------|:-------------------------------------:|:------:|:--------:|
-| delayInMs      |   scrolling with [delayInMs]ms delay  | number |    NO    |
-| scrollStepInPx | scrolling per [scrollStepInPx] pixels | number |    NO    |
+| delay      |   scrolling with [delayInMs]ms delay  | number |    NO    |
+| scrollStep | scrolling per [scrollStepInPx] pixels | number |    NO    |
 | color          |              button color             | string |    NO    |
 
 ### Example
