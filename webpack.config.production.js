@@ -48,7 +48,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: ['./example/index', 'Scroll2TopButton'],
+  entry: ['./example/index', 'index'],
   output: {
     path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
@@ -79,7 +79,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loaders: ['babel'],
-        include: [path.join(__dirname, 'example'),path.join(__dirname, 'node_modules/react-lorem/Lorem'), path.join(__dirname, 'Scroll2TopButton.jsx')]
+        include: [path.join(__dirname, 'example'),path.join(__dirname, 'node_modules/react-lorem/Lorem')]
       }
     ]
   }
