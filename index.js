@@ -1,1 +1,1 @@
-import Scroll2TopButton from './Scroll2TopButton.jsx';
+module.exports = require('./Scroll2TopButton.jsx');
