@@ -52,8 +52,8 @@ module.exports = {
     './index.js'
   ],
   output: {
-    path: path.join(__dirname, 'static'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, 'dist'),
+    filename: 'index.js',
     publicPath: '/'
   },
   resolve: {
