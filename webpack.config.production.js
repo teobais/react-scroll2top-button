@@ -54,7 +54,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.js',
-    publicPath: '/'
+    publicPath: '/',
+    libraryTarget: 'commonjs2'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],

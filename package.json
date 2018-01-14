@@ -2,10 +2,11 @@
   "name": "react-scroll2top-button",
   "version": "1.0.5",
   "description": "A react component that renders a scroll-to-top button",
-  "main": "./dist",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "node server.js",
     "build": "cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
+    "clean": "rimraf dist",
     "postinstall": "npm run build",
     "lint": "eslint --cache --ignore-path .gitignore --format=node_modules/eslint-formatter-pretty . *.js",
     "test": "npm run lint"
