@@ -1,7 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Scroll2TopButton from '../Scroll2TopButton.jsx';
-import Lorem from 'react-lorem/Lorem.jsx';
+import Lorem from 'react-lorem/Lorem';
+import Scroll2TopButton from '../Scroll2TopButton';
+
+console.log('index!');
+
 render(
   <div>
     <div>
