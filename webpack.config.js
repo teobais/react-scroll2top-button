@@ -51,7 +51,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:5000',
     'webpack/hot/dev-server',
-    './example/index'
+    './example'
   ],
   output: {
     path: __dirname,
@@ -73,8 +73,8 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: [path.join(__dirname, 'example'),path.join(__dirname, 'node_modules/react-lorem/Lorem'), path.join(__dirname, 'Scroll2TopButton.jsx')]
+        loader: 'babel-loader',
+        exclude: /node_modules\/(?!react-lorem)/
       }
     ]
   }

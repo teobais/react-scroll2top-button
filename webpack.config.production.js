@@ -48,11 +48,14 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: ['./example/index', 'Scroll2TopButton'],
+  entry: [
+    './index.js'
+  ],
   output: {
-    path: path.join(__dirname, 'static'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    path: path.join(__dirname, 'dist'),
+    filename: 'index.js',
+    publicPath: '/',
+    libraryTarget: 'commonjs2'
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
@@ -68,18 +71,18 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // })
   ],
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: [path.join(__dirname, 'example'),path.join(__dirname, 'node_modules/react-lorem/Lorem'), path.join(__dirname, 'Scroll2TopButton.jsx')]
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
   }
