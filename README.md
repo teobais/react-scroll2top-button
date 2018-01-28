@@ -8,39 +8,30 @@
 
 ### Usage
 
-    npm install react-scroll2top-button    
+    npm install react-scroll2top-button
 
 > In your .jsx
 
 ```javascript
-import React from 'react';
-import Scroll2TopButton from 'react-scroll2top-button/Scroll2TopButton';
+import React, { Component } from 'react';
+import Scroll2TopButton from 'react-scroll2top-button';
 
-render(
-  <div>
-    <h1>Hello World!</h1>
-    <h1>Hello World!</h1>
-    <h1>Hello World!</h1>
-    ...
-    <Scroll2TopButton />
-  </div>,
-  document.getElementById('root')
-);
-```
-
-> In your webpack.config.js
-
-```javascript
-module: {
-    loaders: [
-      {
-        ...,
-        include: [path.resolve(__dirname, 'node_modules/react-scroll2top-button/Scroll2TopButton')],
+export default class App extends Component {
+  render() {
+    return (
+    // Add your component markup and other subcomponent references here.
+      <div>
+        <h1>Hello, World!</h1>
+        <h1>Hello, World!</h1>
+        <h1>Hello, World!</h1>
         ...
-      }
-    ]
+        <Scroll2TopButton />
+      </div>);
   }
+}
+
 ```
+
 ### Properties
 
 | Property       |              Description              |  Type  | Required |
@@ -48,7 +39,7 @@ module: {
 | delay      |   scrolling with [delay]ms delay  | number |    NO    |
 | scrollStep | scrolling per [scrollStep] pixels | number |    NO    |
 | color          |              button color             | string |    NO    |
- 
+
 ### Example
 
 ```
